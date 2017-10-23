@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D400D08C1F9E649C00F6E129 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D400D08B1F9E649C00F6E129 /* AppDelegate.swift */; };
+		D400D08E1F9E649C00F6E129 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D400D08D1F9E649C00F6E129 /* ViewController.swift */; };
+		D400D0911F9E649C00F6E129 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D400D08F1F9E649C00F6E129 /* Main.storyboard */; };
+		D400D0931F9E649C00F6E129 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D400D0921F9E649C00F6E129 /* Assets.xcassets */; };
+		D400D0961F9E649C00F6E129 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D400D0941F9E649C00F6E129 /* LaunchScreen.storyboard */; };
+		D400D0A11F9E649C00F6E129 /* FrancisSoundProcessingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D400D0A01F9E649C00F6E129 /* FrancisSoundProcessingTests.swift */; };
+		D400D0AC1F9E649C00F6E129 /* FrancisSoundProcessingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D400D0AB1F9E649C00F6E129 /* FrancisSoundProcessingUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D400D09D1F9E649C00F6E129 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D400D0801F9E649C00F6E129 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D400D0871F9E649C00F6E129;
+			remoteInfo = FrancisSoundProcessing;
+		};
+		D400D0A81F9E649C00F6E129 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D400D0801F9E649C00F6E129 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D400D0871F9E649C00F6E129;
+			remoteInfo = FrancisSoundProcessing;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D400D0881F9E649C00F6E129 /* FrancisSoundProcessing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrancisSoundProcessing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D400D08B1F9E649C00F6E129 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D400D08D1F9E649C00F6E129 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D400D0901F9E649C00F6E129 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D400D0921F9E649C00F6E129 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D400D0951F9E649C00F6E129 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D400D0971F9E649C00F6E129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D400D09C1F9E649C00F6E129 /* FrancisSoundProcessingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrancisSoundProcessingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D400D0A01F9E649C00F6E129 /* FrancisSoundProcessingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrancisSoundProcessingTests.swift; sourceTree = "<group>"; };
+		D400D0A21F9E649C00F6E129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D400D0A71F9E649C00F6E129 /* FrancisSoundProcessingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrancisSoundProcessingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D400D0AB1F9E649C00F6E129 /* FrancisSoundProcessingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrancisSoundProcessingUITests.swift; sourceTree = "<group>"; };
+		D400D0AD1F9E649C00F6E129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D400D0851F9E649C00F6E129 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D400D0991F9E649C00F6E129 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D400D0A41F9E649C00F6E129 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D400D07F1F9E649C00F6E129 = {
+			isa = PBXGroup;
+			children = (
+				D400D08A1F9E649C00F6E129 /* FrancisSoundProcessing */,
+				D400D09F1F9E649C00F6E129 /* FrancisSoundProcessingTests */,
+				D400D0AA1F9E649C00F6E129 /* FrancisSoundProcessingUITests */,
+				D400D0891F9E649C00F6E129 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D400D0891F9E649C00F6E129 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D400D0881F9E649C00F6E129 /* FrancisSoundProcessing.app */,
+				D400D09C1F9E649C00F6E129 /* FrancisSoundProcessingTests.xctest */,
+				D400D0A71F9E649C00F6E129 /* FrancisSoundProcessingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D400D08A1F9E649C00F6E129 /* FrancisSoundProcessing */ = {
+			isa = PBXGroup;
+			children = (
+				D400D08B1F9E649C00F6E129 /* AppDelegate.swift */,
+				D400D08D1F9E649C00F6E129 /* ViewController.swift */,
+				D400D08F1F9E649C00F6E129 /* Main.storyboard */,
+				D400D0921F9E649C00F6E129 /* Assets.xcassets */,
+				D400D0941F9E649C00F6E129 /* LaunchScreen.storyboard */,
+				D400D0971F9E649C00F6E129 /* Info.plist */,
+			);
+			path = FrancisSoundProcessing;
+			sourceTree = "<group>";
+		};
+		D400D09F1F9E649C00F6E129 /* FrancisSoundProcessingTests */ = {
+			isa = PBXGroup;
+			children = (
+				D400D0A01F9E649C00F6E129 /* FrancisSoundProcessingTests.swift */,
+				D400D0A21F9E649C00F6E129 /* Info.plist */,
+			);
+			path = FrancisSoundProcessingTests;
+			sourceTree = "<group>";
+		};
+		D400D0AA1F9E649C00F6E129 /* FrancisSoundProcessingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D400D0AB1F9E649C00F6E129 /* FrancisSoundProcessingUITests.swift */,
+				D400D0AD1F9E649C00F6E129 /* Info.plist */,
+			);
+			path = FrancisSoundProcessingUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D400D0871F9E649C00F6E129 /* FrancisSoundProcessing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D400D0B01F9E649C00F6E129 /* Build configuration list for PBXNativeTarget "FrancisSoundProcessing" */;
+			buildPhases = (
+				D400D0841F9E649C00F6E129 /* Sources */,
+				D400D0851F9E649C00F6E129 /* Frameworks */,
+				D400D0861F9E649C00F6E129 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FrancisSoundProcessing;
+			productName = FrancisSoundProcessing;
+			productReference = D400D0881F9E649C00F6E129 /* FrancisSoundProcessing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D400D09B1F9E649C00F6E129 /* FrancisSoundProcessingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D400D0B31F9E649C00F6E129 /* Build configuration list for PBXNativeTarget "FrancisSoundProcessingTests" */;
+			buildPhases = (
+				D400D0981F9E649C00F6E129 /* Sources */,
+				D400D0991F9E649C00F6E129 /* Frameworks */,
+				D400D09A1F9E649C00F6E129 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D400D09E1F9E649C00F6E129 /* PBXTargetDependency */,
+			);
+			name = FrancisSoundProcessingTests;
+			productName = FrancisSoundProcessingTests;
+			productReference = D400D09C1F9E649C00F6E129 /* FrancisSoundProcessingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D400D0A61F9E649C00F6E129 /* FrancisSoundProcessingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D400D0B61F9E649C00F6E129 /* Build configuration list for PBXNativeTarget "FrancisSoundProcessingUITests" */;
+			buildPhases = (
+				D400D0A31F9E649C00F6E129 /* Sources */,
+				D400D0A41F9E649C00F6E129 /* Frameworks */,
+				D400D0A51F9E649C00F6E129 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D400D0A91F9E649C00F6E129 /* PBXTargetDependency */,
+			);
+			name = FrancisSoundProcessingUITests;
+			productName = FrancisSoundProcessingUITests;
+			productReference = D400D0A71F9E649C00F6E129 /* FrancisSoundProcessingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D400D0801F9E649C00F6E129 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = KarmaHound;
+				TargetAttributes = {
+					D400D0871F9E649C00F6E129 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					D400D09B1F9E649C00F6E129 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D400D0871F9E649C00F6E129;
+					};
+					D400D0A61F9E649C00F6E129 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D400D0871F9E649C00F6E129;
+					};
+				};
+			};
+			buildConfigurationList = D400D0831F9E649C00F6E129 /* Build configuration list for PBXProject "FrancisSoundProcessing" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D400D07F1F9E649C00F6E129;
+			productRefGroup = D400D0891F9E649C00F6E129 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D400D0871F9E649C00F6E129 /* FrancisSoundProcessing */,
+				D400D09B1F9E649C00F6E129 /* FrancisSoundProcessingTests */,
+				D400D0A61F9E649C00F6E129 /* FrancisSoundProcessingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D400D0861F9E649C00F6E129 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D400D0961F9E649C00F6E129 /* LaunchScreen.storyboard in Resources */,
+				D400D0931F9E649C00F6E129 /* Assets.xcassets in Resources */,
+				D400D0911F9E649C00F6E129 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D400D09A1F9E649C00F6E129 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D400D0A51F9E649C00F6E129 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D400D0841F9E649C00F6E129 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D400D08E1F9E649C00F6E129 /* ViewController.swift in Sources */,
+				D400D08C1F9E649C00F6E129 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D400D0981F9E649C00F6E129 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D400D0A11F9E649C00F6E129 /* FrancisSoundProcessingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D400D0A31F9E649C00F6E129 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D400D0AC1F9E649C00F6E129 /* FrancisSoundProcessingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D400D09E1F9E649C00F6E129 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D400D0871F9E649C00F6E129 /* FrancisSoundProcessing */;
+			targetProxy = D400D09D1F9E649C00F6E129 /* PBXContainerItemProxy */;
+		};
+		D400D0A91F9E649C00F6E129 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D400D0871F9E649C00F6E129 /* FrancisSoundProcessing */;
+			targetProxy = D400D0A81F9E649C00F6E129 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D400D08F1F9E649C00F6E129 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D400D0901F9E649C00F6E129 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D400D0941F9E649C00F6E129 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D400D0951F9E649C00F6E129 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D400D0AE1F9E649C00F6E129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D400D0AF1F9E649C00F6E129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D400D0B11F9E649C00F6E129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FrancisSoundProcessing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KarmaHound.FrancisSoundProcessing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D400D0B21F9E649C00F6E129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FrancisSoundProcessing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KarmaHound.FrancisSoundProcessing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D400D0B41F9E649C00F6E129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FrancisSoundProcessingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KarmaHound.FrancisSoundProcessingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FrancisSoundProcessing.app/FrancisSoundProcessing";
+			};
+			name = Debug;
+		};
+		D400D0B51F9E649C00F6E129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FrancisSoundProcessingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KarmaHound.FrancisSoundProcessingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FrancisSoundProcessing.app/FrancisSoundProcessing";
+			};
+			name = Release;
+		};
+		D400D0B71F9E649C00F6E129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FrancisSoundProcessingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KarmaHound.FrancisSoundProcessingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FrancisSoundProcessing;
+			};
+			name = Debug;
+		};
+		D400D0B81F9E649C00F6E129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FrancisSoundProcessingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KarmaHound.FrancisSoundProcessingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FrancisSoundProcessing;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D400D0831F9E649C00F6E129 /* Build configuration list for PBXProject "FrancisSoundProcessing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D400D0AE1F9E649C00F6E129 /* Debug */,
+				D400D0AF1F9E649C00F6E129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D400D0B01F9E649C00F6E129 /* Build configuration list for PBXNativeTarget "FrancisSoundProcessing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D400D0B11F9E649C00F6E129 /* Debug */,
+				D400D0B21F9E649C00F6E129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D400D0B31F9E649C00F6E129 /* Build configuration list for PBXNativeTarget "FrancisSoundProcessingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D400D0B41F9E649C00F6E129 /* Debug */,
+				D400D0B51F9E649C00F6E129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D400D0B61F9E649C00F6E129 /* Build configuration list for PBXNativeTarget "FrancisSoundProcessingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D400D0B71F9E649C00F6E129 /* Debug */,
+				D400D0B81F9E649C00F6E129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D400D0801F9E649C00F6E129 /* Project object */;
+}
