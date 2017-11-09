@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F6858958A8773C6F1891846 /* libPods-FrancisSoundProcessingUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7361AAAC0FF08B1D3BADF754 /* libPods-FrancisSoundProcessingUITests.a */; };
-		7851B6B6BC4C6EF1D81AB2BA /* libPods-FrancisSoundProcessing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4DF9A935A3A4E6FFB8F2087 /* libPods-FrancisSoundProcessing.a */; };
+		201F831618C2A5ECEA029836 /* Pods_FrancisSoundProcessing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFFAC3AC9173C0DF546164F8 /* Pods_FrancisSoundProcessing.framework */; };
+		685590664004FEA4DDC84C17 /* Pods_FrancisSoundProcessingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E21E9FBB4B7CB4139F888121 /* Pods_FrancisSoundProcessingTests.framework */; };
 		D400D08C1F9E649C00F6E129 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D400D08B1F9E649C00F6E129 /* AppDelegate.swift */; };
 		D400D08E1F9E649C00F6E129 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D400D08D1F9E649C00F6E129 /* ViewController.swift */; };
 		D400D0911F9E649C00F6E129 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D400D08F1F9E649C00F6E129 /* Main.storyboard */; };
@@ -16,7 +16,8 @@
 		D400D0961F9E649C00F6E129 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D400D0941F9E649C00F6E129 /* LaunchScreen.storyboard */; };
 		D400D0A11F9E649C00F6E129 /* FrancisSoundProcessingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D400D0A01F9E649C00F6E129 /* FrancisSoundProcessingTests.swift */; };
 		D400D0AC1F9E649C00F6E129 /* FrancisSoundProcessingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D400D0AB1F9E649C00F6E129 /* FrancisSoundProcessingUITests.swift */; };
-		D44426A9E102EC07129FE908 /* libPods-FrancisSoundProcessingTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 735FE6271F94A1C738916BC9 /* libPods-FrancisSoundProcessingTests.a */; };
+		D465E9D41FB18933005FF8A2 /* robeep.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D465E9D31FB18933005FF8A2 /* robeep.m4a */; };
+		DEFC8EEDCAAB6E4D1A006206 /* Pods_FrancisSoundProcessingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1566C4704DFCBA20C34FA3E0 /* Pods_FrancisSoundProcessingUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,12 +39,10 @@
 
 /* Begin PBXFileReference section */
 		064DF0291A1FA6369A0F85ED /* Pods-FrancisSoundProcessing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrancisSoundProcessing.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FrancisSoundProcessing/Pods-FrancisSoundProcessing.debug.xcconfig"; sourceTree = "<group>"; };
-		735FE6271F94A1C738916BC9 /* libPods-FrancisSoundProcessingTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FrancisSoundProcessingTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7361AAAC0FF08B1D3BADF754 /* libPods-FrancisSoundProcessingUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FrancisSoundProcessingUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1566C4704DFCBA20C34FA3E0 /* Pods_FrancisSoundProcessingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrancisSoundProcessingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		862680E553A5883FFE90C8D9 /* Pods-FrancisSoundProcessingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrancisSoundProcessingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FrancisSoundProcessingUITests/Pods-FrancisSoundProcessingUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		979CB289BCA46784728655A7 /* Pods-FrancisSoundProcessing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrancisSoundProcessing.release.xcconfig"; path = "Pods/Target Support Files/Pods-FrancisSoundProcessing/Pods-FrancisSoundProcessing.release.xcconfig"; sourceTree = "<group>"; };
 		A2E39CB57EA0F287B0A2CD15 /* Pods-FrancisSoundProcessingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrancisSoundProcessingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FrancisSoundProcessingTests/Pods-FrancisSoundProcessingTests.debug.xcconfig"; sourceTree = "<group>"; };
-		C4DF9A935A3A4E6FFB8F2087 /* libPods-FrancisSoundProcessing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FrancisSoundProcessing.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D400D0881F9E649C00F6E129 /* FrancisSoundProcessing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrancisSoundProcessing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D400D08B1F9E649C00F6E129 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D400D08D1F9E649C00F6E129 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +56,9 @@
 		D400D0A71F9E649C00F6E129 /* FrancisSoundProcessingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrancisSoundProcessingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D400D0AB1F9E649C00F6E129 /* FrancisSoundProcessingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrancisSoundProcessingUITests.swift; sourceTree = "<group>"; };
 		D400D0AD1F9E649C00F6E129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D465E9D31FB18933005FF8A2 /* robeep.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = robeep.m4a; sourceTree = "<group>"; };
+		DFFAC3AC9173C0DF546164F8 /* Pods_FrancisSoundProcessing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrancisSoundProcessing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E21E9FBB4B7CB4139F888121 /* Pods_FrancisSoundProcessingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrancisSoundProcessingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBCBEEA704FD9965D8387F87 /* Pods-FrancisSoundProcessingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrancisSoundProcessingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FrancisSoundProcessingUITests/Pods-FrancisSoundProcessingUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F58FC8E786FBFA26B791FE01 /* Pods-FrancisSoundProcessingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrancisSoundProcessingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FrancisSoundProcessingTests/Pods-FrancisSoundProcessingTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7851B6B6BC4C6EF1D81AB2BA /* libPods-FrancisSoundProcessing.a in Frameworks */,
+				201F831618C2A5ECEA029836 /* Pods_FrancisSoundProcessing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D44426A9E102EC07129FE908 /* libPods-FrancisSoundProcessingTests.a in Frameworks */,
+				685590664004FEA4DDC84C17 /* Pods_FrancisSoundProcessingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F6858958A8773C6F1891846 /* libPods-FrancisSoundProcessingUITests.a in Frameworks */,
+				DEFC8EEDCAAB6E4D1A006206 /* Pods_FrancisSoundProcessingUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,9 +94,9 @@
 		5980172FAAEB6198E684AC2F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C4DF9A935A3A4E6FFB8F2087 /* libPods-FrancisSoundProcessing.a */,
-				735FE6271F94A1C738916BC9 /* libPods-FrancisSoundProcessingTests.a */,
-				7361AAAC0FF08B1D3BADF754 /* libPods-FrancisSoundProcessingUITests.a */,
+				DFFAC3AC9173C0DF546164F8 /* Pods_FrancisSoundProcessing.framework */,
+				E21E9FBB4B7CB4139F888121 /* Pods_FrancisSoundProcessingTests.framework */,
+				1566C4704DFCBA20C34FA3E0 /* Pods_FrancisSoundProcessingUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -119,6 +121,7 @@
 				D400D09F1F9E649C00F6E129 /* FrancisSoundProcessingTests */,
 				D400D0AA1F9E649C00F6E129 /* FrancisSoundProcessingUITests */,
 				D400D0891F9E649C00F6E129 /* Products */,
+				D465E9D31FB18933005FF8A2 /* robeep.m4a */,
 				5FDB4126CF1784B46885E8EC /* Pods */,
 				5980172FAAEB6198E684AC2F /* Frameworks */,
 			);
@@ -284,6 +287,7 @@
 				D400D0961F9E649C00F6E129 /* LaunchScreen.storyboard in Resources */,
 				D400D0931F9E649C00F6E129 /* Assets.xcassets in Resources */,
 				D400D0911F9E649C00F6E129 /* Main.storyboard in Resources */,
+				D465E9D41FB18933005FF8A2 /* robeep.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,11 +446,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-FrancisSoundProcessing/Pods-FrancisSoundProcessing-frameworks.sh",
 				"${PODS_ROOT}/AudioKit/iOS/AudioKit.framework",
 				"${PODS_ROOT}/AudioKit/iOS/AudioKitUI.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftySound/SwiftySound.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AudioKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AudioKitUI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftySound.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -630,6 +636,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EK35EU7XK8;
 				INFOPLIST_FILE = FrancisSoundProcessing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KarmaHound.FrancisSoundProcessing;
@@ -646,6 +653,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EK35EU7XK8;
 				INFOPLIST_FILE = FrancisSoundProcessing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KarmaHound.FrancisSoundProcessing;

@@ -3,9 +3,11 @@
 
 target 'FrancisSoundProcessing' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  #  use_frameworks!
+  use_frameworks!
 
   pod 'AudioKit', '~> 4.0'
+  pod 'SwiftySound'
+
 
   # Pods for FrancisSoundProcessing
 
