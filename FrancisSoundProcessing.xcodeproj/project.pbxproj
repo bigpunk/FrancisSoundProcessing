@@ -16,6 +16,8 @@
 		D400D0961F9E649C00F6E129 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D400D0941F9E649C00F6E129 /* LaunchScreen.storyboard */; };
 		D400D0A11F9E649C00F6E129 /* FrancisSoundProcessingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D400D0A01F9E649C00F6E129 /* FrancisSoundProcessingTests.swift */; };
 		D400D0AC1F9E649C00F6E129 /* FrancisSoundProcessingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D400D0AB1F9E649C00F6E129 /* FrancisSoundProcessingUITests.swift */; };
+		D44F198D1FB7C98F00B330B9 /* RollingWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44F198C1FB7C98F00B330B9 /* RollingWindow.swift */; };
+		D44F198E1FB7CC8C00B330B9 /* RollingWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44F198C1FB7C98F00B330B9 /* RollingWindow.swift */; };
 		D465E9D41FB18933005FF8A2 /* robeep.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D465E9D31FB18933005FF8A2 /* robeep.m4a */; };
 		DEFC8EEDCAAB6E4D1A006206 /* Pods_FrancisSoundProcessingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1566C4704DFCBA20C34FA3E0 /* Pods_FrancisSoundProcessingUITests.framework */; };
 /* End PBXBuildFile section */
@@ -56,6 +58,7 @@
 		D400D0A71F9E649C00F6E129 /* FrancisSoundProcessingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrancisSoundProcessingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D400D0AB1F9E649C00F6E129 /* FrancisSoundProcessingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrancisSoundProcessingUITests.swift; sourceTree = "<group>"; };
 		D400D0AD1F9E649C00F6E129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D44F198C1FB7C98F00B330B9 /* RollingWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollingWindow.swift; sourceTree = "<group>"; };
 		D465E9D31FB18933005FF8A2 /* robeep.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = robeep.m4a; sourceTree = "<group>"; };
 		DFFAC3AC9173C0DF546164F8 /* Pods_FrancisSoundProcessing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrancisSoundProcessing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E21E9FBB4B7CB4139F888121 /* Pods_FrancisSoundProcessingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrancisSoundProcessingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +149,7 @@
 				D400D0921F9E649C00F6E129 /* Assets.xcassets */,
 				D400D0941F9E649C00F6E129 /* LaunchScreen.storyboard */,
 				D400D0971F9E649C00F6E129 /* Info.plist */,
+				D44F198C1FB7C98F00B330B9 /* RollingWindow.swift */,
 			);
 			path = FrancisSoundProcessing;
 			sourceTree = "<group>";
@@ -467,6 +471,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D400D08E1F9E649C00F6E129 /* ViewController.swift in Sources */,
+				D44F198D1FB7C98F00B330B9 /* RollingWindow.swift in Sources */,
 				D400D08C1F9E649C00F6E129 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -475,6 +480,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D44F198E1FB7CC8C00B330B9 /* RollingWindow.swift in Sources */,
 				D400D0A11F9E649C00F6E129 /* FrancisSoundProcessingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

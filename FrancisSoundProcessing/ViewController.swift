@@ -15,12 +15,13 @@ import SwiftySound
 class ViewController: UIViewController {
 
     @IBOutlet private var amplitudeLabel: UILabel!
-    
+        
     //var mic: AKMicrophone!
     var mic: AKStereoInput!
     var tracker: AKFrequencyTracker!
     var silence: AKBooster!
     var soundOn: Bool = false
+    var amplitudeHistory = RollingWindow(windowSize: 100)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,6 +55,7 @@ class ViewController: UIViewController {
     @objc func updateUI() {
         print("in timer!!")
 
+        amplitudeHistory.updateRollingWindow(val: tracker.amplitude)
         amplitudeLabel.text = String(format: "%0.2f", tracker.amplitude)
     }
 
