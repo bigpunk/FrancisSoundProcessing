@@ -1,17 +1,21 @@
 PODS:
-  - AudioKit (4.0.3):
-    - AudioKit/UI (= 4.0.3)
-  - AudioKit/UI (4.0.3)
-  - SwiftySound (0.7.0)
+  - AudioKit (4.7.2):
+    - AudioKit/Core (= 4.7.2)
+    - AudioKit/UI (= 4.7.2)
+  - AudioKit/Core (4.7.2)
+  - AudioKit/UI (4.7.2):
+    - AudioKit/Core
 
 DEPENDENCIES:
-  - AudioKit (~> 4.0)
-  - SwiftySound
+  - AudioKit (~> 4.7)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AudioKit
 
 SPEC CHECKSUMS:
-  AudioKit: 914e5e8fcbf35099ff2398775342446a2d81476d
-  SwiftySound: bca0bb721690fb65249f4776cb0875abd98e9941
+  AudioKit: ee4ab79e2fffe42e52b8fd8d214eaaea968c368e
 
-PODFILE CHECKSUM: 816c2a39f6f6583d211b69b0debad2f349922424
+PODFILE CHECKSUM: 4e5e91e100f17d04d71352372987426f983ff811
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.6.1

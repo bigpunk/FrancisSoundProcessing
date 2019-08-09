@@ -10,7 +10,6 @@ import UIKit
 
 import AudioKit
 import AudioKitUI
-import SwiftySound
 
 class ViewController: UIViewController {
 
@@ -19,11 +18,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var lookbackMsTextField: UITextField!
     @IBOutlet weak var countAboveThresholdTextField: UITextField!
     
-    //var mic: AKMicrophone!
-    var mic: AKStereoInput!
+    var mic: AKMicrophone!
+    var oscillator: AKOscillator!
     var tracker: AKFrequencyTracker!
-    var silence: AKBooster!
-    var soundOn: Bool = false
+    var micBooster: AKBooster!
+    var mainMixer: AKMixer!
     var amplitudeHistory = RollingWindow(windowSize: 100)
     let intervalLength = 0.3
     let alarmLength = 4.2
@@ -32,23 +31,39 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        AKSettings.audioInputEnabled = true
-        //mic = AKMicrophone()
-        mic = AKStereoInput()
-        tracker = AKFrequencyTracker(mic)
-        silence = AKBooster(tracker, gain: 0)
+        AKAudioFile.cleanTempDirectory()
         
-        print("....done view did load.")
+        AKSettings.bufferLength = .medium
+        
+        do {
+            try AKSettings.setSession(category: .playAndRecord, with: .allowBluetoothA2DP)
+        } catch {
+            print("FAILED to set playAndRecord Session")
+        }
+        
+        AKSettings.defaultToSpeaker = true
+        
+        AKSettings.audioInputEnabled = true
+        mic = AKMicrophone()
+        
+        oscillator = AKOscillator()
+        oscillator.frequency = 500
+        oscillator.amplitude = 4.0
+        
+        tracker = AKFrequencyTracker(mic)
+        micBooster = AKBooster(tracker, gain: 0)
+        
+        // The mixer allows both listening and playing sounds.
+        mainMixer = AKMixer(oscillator, micBooster)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        AudioKit.output = silence
-        AudioKit.start()
+        AudioKit.output = mainMixer
+        try! AudioKit.start()
         
         // setup timer to periodically call updateUI()
-        
         amplitudeLabel.text = "started"
         print("In view did appear!!!")
         Timer.scheduledTimer(timeInterval: intervalLength,
@@ -60,15 +75,11 @@ class ViewController: UIViewController {
     
     @objc func updateUI() {
         
-        //var thres: Double = 0.0
-        
-        print("in timer!!")
-
         let amplitudeThreshold = Double(amplitudeThresholdTextField.text ?? "") ?? 0.05
         let lookbackMs = Int(lookbackMsTextField.text ?? "") ?? 7
         let countAboveThreshold = Int(countAboveThresholdTextField.text ?? "") ?? 5
         
-        print("Hello thres: \(amplitudeThreshold) lookbackMs: \(lookbackMs) countAboveThreshold: \(countAboveThreshold) alarmLeft: \(alarmLeft)")
+        print("Threshold: \(amplitudeThreshold) lookbackMs: \(lookbackMs) countAboveThreshold: \(countAboveThreshold) alarmLeft: \(alarmLeft), amp: \(tracker.amplitude)")
         
         amplitudeHistory.updateRollingWindow(val: tracker.amplitude)
         amplitudeLabel.text = String(format: "%0.2f", tracker.amplitude)
@@ -83,13 +94,10 @@ class ViewController: UIViewController {
             }
         }
         
-        print("......above count: \(aboveCount)")
-        
         if (aboveCount > countAboveThreshold && alarmLeft <= 0.0) {
             toggleSound()
             alarmLeft = alarmLength
         } else if (alarmLeft > 0.0) {
-            print("!!!!!!!!!!SOUND ON!!!!!!!!!!!!!!")
             alarmLeft -= intervalLength
         }
     }
@@ -100,23 +108,32 @@ class ViewController: UIViewController {
     }
 
     @IBAction func showMessage() {
-        let engageController = UIAlertController(title: "Enage", message: "Listening is engaged", preferredStyle: UIAlertControllerStyle.alert)
+        let engageController = UIAlertController(title: "Enage", message: "Listening is engaged", preferredStyle: UIAlertController.Style.alert)
         
-        engageController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:nil))
+        engageController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:nil))
                 
         present(engageController, animated: true, completion: nil)
     }
     
     @IBAction func toggleSound() {
-        print("toggling sound!!")
-
-//Sound.play(file: "robeep.m4a")
         
-        if (!soundOn) {
-            soundOn = true
+        if (!oscillator.isPlaying) {
+            oscillator.start()
         } else {
-            soundOn = false
+            oscillator.stop()
+        }
+    }
+    
+    // Displays Audio Inputs and Outputs Routes for debugging purposes.
+    func displayAudioRoutes() {
+        let session = AVAudioSession.sharedInstance()
+        
+        for output in session.currentRoute.outputs {
+            print("   Output: \(output)")
+        }
+        
+        for input in session.currentRoute.inputs {
+            print("     Input: \(input)")
         }
     }
 }
-
